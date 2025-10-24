@@ -1,0 +1,168 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.error-message {
+  color: #ff4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Estilos base para todos los botones */
+.login-container button {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 8px 0;
+}
+
+/* Botones principales (Entrar y Crear cuenta) */
+.btn-primary {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #357abd;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de registro */
+.btn-register {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.btn-register:hover {
+  background-color: #218838;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones de redes sociales */
+.btn-social {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-social:hover {
+  background-color: #f8f9fa;
+  border-color: #dadada;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Separador con OR */
+.divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.divider-or {
+  padding: 0 10px;
+  color: #666;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: #fff;
+  border-radius: 12px;
+}
+
+/* Contenedor de botones sociales */
+.social-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.legal-links {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.terms-text {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.legal-link {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.legal-link:hover {
+  text-decoration: underline;
+}
+
+/* Logo en la página de login */
+.login-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.brand-icon {
+  font-size: 1.6rem;
+}
+
+.brand-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ff6b6b, #8675ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Ajuste para que el footer no quede pegado al contenido */
+.footer {
+  margin-top: 2rem;
+}

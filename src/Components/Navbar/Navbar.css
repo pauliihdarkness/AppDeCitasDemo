@@ -1,0 +1,135 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.brand-icon {
+    font-size: 1.75rem;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ff6b6b, #8675ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #ff6b6b, #8675ff);
+    transition: width 0.2s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.btn-sign-in {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff6b6b, #8675ff);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-sign-in:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .navbar-container {
+        justify-content: space-between;
+    }
+
+    .btn-sign-in {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-name {
+        font-size: 1.25rem;
+    }
+
+    .brand-icon {
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    
+}

@@ -1,0 +1,12 @@
+.dash-navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dash-btn-navigation-bar{
+    border: none;
+    background: none;
+    cursor: pointer;
+}

@@ -29,8 +29,8 @@ Instalación y ejecución (Windows PowerShell)
 1. Clonar el repositorio
 
 ```powershell
-git clone <url-del-repo>
-cd "c:\Users\Ladyt\Paulii Darkness Dev\AppDeCitasConFirebase"
+git clone https://github.com/pauliihdarkness/AppDeCitasDemo.git
+cd AppDeCitasDemo
 ```
 
 2. Instalar dependencias
